@@ -1,0 +1,259 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BYTE	facesrv.h	/^typedef  uint8_t BYTE;$/;"	t
+CC	Makefile	/^CC = g++$/;"	m
+CHECK_RDWR_RET	storage.cpp	51;"	d	file:
+CLIENT_SATE_IDLE	testsrv.cpp	/^    CLIENT_SATE_IDLE,$/;"	e	enum:__anon4	file:
+CLIENT_STATE_1_V_1	testsrv.cpp	/^    CLIENT_STATE_1_V_1,$/;"	e	enum:__anon4	file:
+CLIENT_STATE_1_V_N	testsrv.cpp	/^    CLIENT_STATE_1_V_N,$/;"	e	enum:__anon4	file:
+CLIENT_STATE_FEATURE_DIR_GEN	testsrv.cpp	/^    CLIENT_STATE_FEATURE_DIR_GEN,$/;"	e	enum:__anon4	file:
+CLIENT_STATE_N_V_N	testsrv.cpp	/^    CLIENT_STATE_N_V_N,$/;"	e	enum:__anon4	file:
+CXX	Makefile	/^CXX = g++ $/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -DMAX_MSG_PER_PROC=8$/;"	m
+DEBUG	sort.cpp	7;"	d	file:
+FILE_IDX	teststorage.cpp	9;"	d	file:
+LDFLAGS	Makefile	/^LDFLAGS = -pthread$/;"	m
+LIST_HEAD_INIT	sort.h	7;"	d
+LIST_POISON1	sort.h	4;"	d
+LIST_POISON2	sort.h	5;"	d
+MAX_FILENAME	facesrv.h	45;"	d
+MSG_NEW_TASK	tasks.h	/^    MSG_NEW_TASK    = 0x10001,$/;"	e	enum:__anon3
+MSG_QUIT	tasks.h	/^    MSG_QUIT,$/;"	e	enum:__anon3
+MSG_USER_TASK	tasks.h	/^    MSG_USER_TASK   = 0x20000,$/;"	e	enum:__anon3
+NUMBER_PROC_CHANNEL	testsrv.cpp	32;"	d	file:
+REQ_CMD_FACE_COMPARE	facesrv.h	/^    REQ_CMD_FACE_COMPARE    = 0x1001,$/;"	e	enum:__anon1
+REQ_CMD_FEATURE_CMP	facesrv.h	/^    REQ_CMD_FEATURE_CMP     = 0x1003,$/;"	e	enum:__anon1
+REQ_CMD_FEATURE_GEN	facesrv.h	/^    REQ_CMD_FEATURE_GEN     = 0x1002,$/;"	e	enum:__anon1
+STATE_BUSY	tasks.cpp	/^    STATE_BUSY      = 1 $/;"	e	enum:__anon2	file:
+STATE_IDLE	tasks.cpp	/^    STATE_IDLE      = 0,$/;"	e	enum:__anon2	file:
+TEST	sort.cpp	6;"	d	file:
+TICK_BEGIN	testc.cpp	33;"	d	file:
+TICK_BEGIN	testlisten.cpp	19;"	d	file:
+TICK_BEGIN	testsrv.cpp	45;"	d	file:
+TICK_BEGIN	testtasks.cpp	11;"	d	file:
+TICK_PRINT	testc.cpp	34;"	d	file:
+TICK_PRINT	testlisten.cpp	20;"	d	file:
+TICK_PRINT	testsrv.cpp	47;"	d	file:
+TICK_PRINT	testtasks.cpp	13;"	d	file:
+UNIX_DOMAIN	listen.cpp	/^const char UNIX_DOMAIN[] = "\/tmp\/facesrv.s";$/;"	v
+UNIX_DOMAIN	testlisten.cpp	/^const char UNIX_DOMAIN[] = "\/tmp\/facesrv.s";$/;"	v
+VERBOSE	listen.cpp	34;"	d	file:
+__client_h_	client.h	7;"	d
+__facesrv_h_	facesrv.h	6;"	d
+__list_add	sort.h	/^static inline void __list_add(struct list_head *newnode,$/;"	f
+__list_del	sort.h	/^static inline void __list_del(struct list_head * prev, struct list_head * next)$/;"	f
+__list_del_entry	sort.h	/^static inline void __list_del_entry(struct list_head *entry)$/;"	f
+__mysort_h_	sort.h	2;"	d
+__storage_h_	storage.h	2;"	d
+__tasks_h_	tasks.h	2;"	d
+append_rec	storage.cpp	/^int feature_storage::append_rec(struct feature *f) {$/;"	f	class:feature_storage
+baseidx	tasks.h	/^    char *baseidx;$/;"	m	struct:proc_config
+callback	tasks.cpp	/^static struct proc_callback *callback = NULL;$/;"	v	typeref:struct:proc_callback	file:
+cb	facesrv.cpp	/^static struct proc_callback cb = {$/;"	v	typeref:struct:proc_callback	file:
+cb	testtasks.cpp	/^struct proc_callback cb = {$/;"	v	typeref:struct:proc_callback
+cfg	tasks.cpp	/^static struct proc_config *cfg = NULL;$/;"	v	typeref:struct:proc_config	file:
+choose_proc	testtasks.cpp	/^static int choose_proc(int proc_num, void *data) {$/;"	f	file:
+cleanup	storage.cpp	/^void feature_storage::cleanup()$/;"	f	class:feature_storage
+code	tasks.h	/^    long   code;$/;"	m	struct:message
+compare_func	sort.h	/^typedef int compare_func(struct list_head *, struct list_head *);$/;"	t
+compare_lookup_result	client.cpp	/^static int compare_lookup_result(struct list_head *a, struct list_head *b)$/;"	f	file:
+compare_req	testsrv.cpp	/^struct proc_request compare_req = {$/;"	v	typeref:struct:proc_request
+config	testtasks.cpp	/^struct proc_config config = {$/;"	v	typeref:struct:proc_config
+count	storage.h	/^        int count;$/;"	m	class:feature_storage
+create_thread_per_channel	tasks.cpp	/^static int create_thread_per_channel(struct proc_info *proc) {$/;"	f	file:
+create_thread_response	listen.cpp	/^static int create_thread_response(long fd)$/;"	f	file:
+custom	facesrv.h	/^        void *custom;$/;"	m	class:proc_task_data
+data	storage.h	/^    unsigned char *data;$/;"	m	struct:feature
+data	tasks.h	/^    void*  data;$/;"	m	struct:message
+desc	storage.h	/^    char *desc;$/;"	m	struct:feature
+do_face_compare	facesrv.cpp	/^int do_face_compare(proc_task_data_facecomp *td, int ch)$/;"	f
+do_face_feature_cmp	facesrv.cpp	/^inline void do_face_feature_cmp(proc_task_data_feature_cmp *t, int ch)$/;"	f
+do_face_feature_gen	facesrv.cpp	/^int do_face_feature_gen(proc_task_data_feature_gen *td, int ch)$/;"	f
+do_response	listen.cpp	/^static void * do_response(void *arg)$/;"	f	file:
+do_response_cmp0	listen.cpp	/^static void do_response_cmp0(char *buf, int fd)$/;"	f	file:
+do_response_cmp1	listen.cpp	/^static void do_response_cmp1(char *buf, int fd)$/;"	f	file:
+do_response_identify	listen.cpp	/^static void do_response_identify(char *buf, int fd)$/;"	f	file:
+dump	storage.cpp	/^void feature_storage::dump()$/;"	f	class:feature_storage
+dump_hex	facesrv.cpp	/^void dump_hex(const char *p, int l)$/;"	f
+ef_size	tasks.h	/^    int ef_size;$/;"	m	struct:proc_config
+f	client.h	/^    char f[MAX_FILENAME];$/;"	m	struct:feature_lookup_result
+f1	client.h	/^    char f1[MAX_FILENAME];$/;"	m	struct:feature_compare_result
+f2	client.h	/^    char f2[MAX_FILENAME];$/;"	m	struct:feature_compare_result
+f_head	storage.h	/^        struct list_head f_head; $/;"	m	class:feature_storage	typeref:struct:feature_storage::list_head
+face_client	client.cpp	/^face_client::face_client()$/;"	f	class:face_client
+face_client	client.h	/^class face_client {$/;"	c
+face_compare	client.cpp	/^int face_client::face_compare(const char *f1, const char *f2, float *score)$/;"	f	class:face_client
+face_feature_gen	client.cpp	/^int face_client::face_feature_gen(const char *path)$/;"	f	class:face_client
+face_features_compare	client.cpp	/^feature_compare_result *face_client::face_features_compare(const char *idx1, const char *idx2)$/;"	f	class:face_client
+face_lookup	client.cpp	/^struct feature_lookup_result *face_client::face_lookup(const char *file)$/;"	f	class:face_client
+face_lookup	client.cpp	/^struct feature_lookup_result *face_client::face_lookup(const char *file, const char *idx)$/;"	f	class:face_client
+face_lookup	client.cpp	/^struct feature_lookup_result *face_client::face_lookup(const char *file, feature_storage *s)$/;"	f	class:face_client
+facesrv_core_init	facesrv.cpp	/^int facesrv_core_init(struct proc_config* cfg)$/;"	f
+facesrv_core_uninit	facesrv.cpp	/^void facesrv_core_uninit()$/;"	f
+facesrv_start	facesrv.cpp	/^int facesrv_start(struct proc_config *cfg)$/;"	f
+facesrv_stop	facesrv.cpp	/^int facesrv_stop()$/;"	f
+feature	facesrv.h	/^        BYTE *feature;$/;"	m	class:proc_task_data_feature_gen
+feature	storage.h	/^struct feature {$/;"	s
+feature_compare_result	client.h	/^struct feature_compare_result {$/;"	s
+feature_lookup_result	client.h	/^struct feature_lookup_result {$/;"	s
+feature_storage	storage.cpp	/^feature_storage::feature_storage(const char *filename) {$/;"	f	class:feature_storage
+feature_storage	storage.h	/^class feature_storage {$/;"	c
+features	facesrv.h	/^        struct feature *features[2];$/;"	m	class:proc_task_data_feature_cmp	typeref:struct:proc_task_data_feature_cmp::feature
+file	facesrv.h	/^        char file[MAX_FILENAME];$/;"	m	class:proc_task_data_feature_gen
+file	storage.h	/^        const char *file;$/;"	m	class:feature_storage
+file	storage.h	/^    char *file;$/;"	m	struct:feature
+filename	storage.h	/^        const char *filename() { return file; }$/;"	f	class:feature_storage
+filename	testc.cpp	/^static const char *filename(const char *f)$/;"	f	file:
+files	facesrv.h	/^        char files[2][MAX_FILENAME];$/;"	m	class:proc_task_data_facecomp
+get_count	storage.h	/^        int get_count() { return count; }$/;"	f	class:feature_storage
+get_filename	storage.cpp	/^static const char *get_filename(const char *f) $/;"	f	file:
+get_head	storage.h	/^        struct list_head * get_head() { return &f_head; }$/;"	f	class:feature_storage
+get_message	client.cpp	/^int face_client::get_message(struct message *msg)$/;"	f	class:face_client
+get_proc	tasks.cpp	/^static struct proc_info* get_proc(void *data) {$/;"	f	file:
+get_req_cmd	facesrv.h	/^        int get_req_cmd() { return req_cmd; }$/;"	f	class:proc_task_data
+glb_cfg	listen.cpp	/^struct proc_config glb_cfg = {$/;"	v	typeref:struct:proc_config
+glb_cfg	testc.cpp	/^struct proc_config glb_cfg = {$/;"	v	typeref:struct:proc_config
+glb_cfg	testsrv.cpp	/^struct proc_config glb_cfg = {$/;"	v	typeref:struct:proc_config
+id	storage.h	/^    int id;     \/\/ not saved$/;"	m	struct:feature
+id	tasks.cpp	/^    int id;$/;"	m	struct:proc_info	file:
+l	client.h	/^    struct list_head l;$/;"	m	struct:feature_compare_result	typeref:struct:feature_compare_result::list_head
+l	client.h	/^    struct list_head l;$/;"	m	struct:feature_lookup_result	typeref:struct:feature_lookup_result::list_head
+l	storage.h	/^    struct list_head l;$/;"	m	struct:feature	typeref:struct:feature::list_head
+list_add	sort.h	/^static inline void list_add(struct list_head *newnode, struct list_head *head)$/;"	f
+list_add_tail	sort.h	/^static inline void list_add_tail(struct list_head *newnode, struct list_head *head)$/;"	f
+list_del	sort.h	/^static inline void list_del(struct list_head *entry)$/;"	f
+list_for_each	sort.h	31;"	d
+list_for_each_safe	sort.h	34;"	d
+list_head	sort.h	/^struct list_head {$/;"	s
+list_insert_sort	sort.cpp	/^void list_insert_sort(struct list_head *newnode, struct list_head *head, compare_func f)$/;"	f
+list_move	sort.h	/^static inline void list_move(struct list_head *list, struct list_head *head)$/;"	f
+load	storage.cpp	/^int feature_storage::load(const char *file)$/;"	f	class:feature_storage
+load_idx_db	listen.cpp	/^static int load_idx_db()$/;"	f	file:
+load_one_feature	storage.cpp	/^struct feature * load_one_feature(int fd)$/;"	f
+logd	sort.cpp	12;"	d	file:
+logd	sort.cpp	9;"	d	file:
+loge	simplelog.h	9;"	d
+logi	simplelog.h	10;"	d
+logi	sort.cpp	10;"	d	file:
+logi	sort.cpp	13;"	d	file:
+lookup_by_desc	storage.cpp	/^struct feature * feature_storage::lookup_by_desc(const char *file) {$/;"	f	class:feature_storage
+lookup_by_file	storage.cpp	/^struct feature * feature_storage::lookup_by_file(const char *file) {$/;"	f	class:feature_storage
+loops	testsrv.cpp	/^int loops = 10;$/;"	v
+main	listen.cpp	/^int main(int argc, char **argv)$/;"	f
+main	testc.cpp	/^int main(int argc, char **argv)$/;"	f
+main	testface.cpp	/^int main(int argc, char **argv)$/;"	f
+main	testlisten.cpp	/^int main(int argc, char **argv)$/;"	f
+main	testsrv.cpp	/^int main(int argc, char **argv)$/;"	f
+main	teststorage.cpp	/^int main(int argc, char **argv)$/;"	f
+main	testtasks.cpp	/^int main(int argc, char **argv) {$/;"	f
+main_msgid	testsrv.cpp	/^static int main_msgid;$/;"	v	file:
+message	tasks.h	/^struct message {$/;"	s
+msecond	testface.cpp	/^double msecond()$/;"	f
+msgid	tasks.cpp	/^    int msgid;$/;"	m	struct:proc_info	file:
+msqid	client.h	/^        int msqid;$/;"	m	class:face_client
+mutex_feature	testsrv.cpp	/^static pthread_mutex_t mutex_feature;$/;"	v	file:
+next	sort.h	/^    struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+num	storage.h	/^        int num;$/;"	m	class:feature_storage
+num	testlisten.cpp	/^static int num = 0;$/;"	v	file:
+num	testsrv.cpp	/^int num = 0;$/;"	v
+object	facesrv.h	/^    void *object;$/;"	m	struct:proc_request
+on_compare_finish	testsrv.cpp	/^void on_compare_finish(void *object, proc_task_data *data)$/;"	f
+on_exit	tasks.h	/^    void (*on_exit) (int proc_id);$/;"	m	struct:proc_callback
+on_faceproc_exit	facesrv.cpp	/^static void on_faceproc_exit(int pid)$/;"	f	file:
+on_faceproc_exit	testtasks.cpp	/^static void on_faceproc_exit(int pid) {$/;"	f	file:
+on_faceproc_proc	facesrv.cpp	/^void on_faceproc_proc(int pid, void *data)$/;"	f
+on_faceproc_proc	testtasks.cpp	/^static void on_faceproc_proc(int pid, void *data) {$/;"	f	file:
+on_faceproc_quit	facesrv.cpp	/^static void on_faceproc_quit()$/;"	f	file:
+on_faceproc_quit	testtasks.cpp	/^static void on_faceproc_quit() {$/;"	f	file:
+on_finish	facesrv.h	/^    void (*on_finish) (void *req, proc_task_data *data);$/;"	m	struct:proc_request
+on_proc	tasks.h	/^    void (*on_proc) (int proc_id, void *data);$/;"	m	struct:proc_callback
+on_quit	tasks.h	/^    void (*on_quit) ();$/;"	m	struct:proc_callback
+on_task_finish	client.cpp	/^void face_client::on_task_finish(void *req, proc_task_data *data)$/;"	f	class:face_client
+parse_commandline	listen.cpp	/^static int parse_commandline(int argc, char **argv)$/;"	f	file:
+parse_result	client.cpp	/^int face_client::parse_result(struct message *msg, feature_compare_result *rs)$/;"	f	class:face_client
+parse_result	client.cpp	/^int face_client::parse_result(struct message *msg, float *score)$/;"	f	class:face_client
+parse_result	client.cpp	/^int face_client::parse_result(struct message *msg, struct feature **fout)$/;"	f	class:face_client
+peek_message	client.cpp	/^int face_client::peek_message(struct message *msg)$/;"	f	class:face_client
+prev	sort.h	/^    struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::
+proc_callback	tasks.h	/^struct proc_callback {$/;"	s
+proc_choose	tasks.h	/^    int (*proc_choose) (int proc_num, void *data);$/;"	m	struct:proc_callback
+proc_config	tasks.h	/^struct proc_config {$/;"	s
+proc_feature_1vn	testsrv.cpp	/^static int proc_feature_1vn(struct message &msg, int &num)$/;"	f	file:
+proc_gen_feature_response	testsrv.cpp	/^static void proc_gen_feature_response(struct message &msg, int check_finish)$/;"	f	file:
+proc_gen_feature_response_nowait	testsrv.cpp	/^static void proc_gen_feature_response_nowait()$/;"	f	file:
+proc_info	tasks.cpp	/^struct proc_info {$/;"	s	file:
+proc_init	tasks.cpp	/^void proc_init(struct proc_config *config, struct proc_callback *cb) {$/;"	f
+proc_numb	tasks.h	/^    int proc_numb;$/;"	m	struct:proc_config
+proc_quit	tasks.cpp	/^void proc_quit() {$/;"	f
+proc_request	facesrv.h	/^struct proc_request {$/;"	s
+proc_task_data	facesrv.h	/^        proc_task_data() {$/;"	f	class:proc_task_data
+proc_task_data	facesrv.h	/^class proc_task_data {$/;"	c
+proc_task_data_facecomp	facesrv.h	/^        proc_task_data_facecomp() {$/;"	f	class:proc_task_data_facecomp
+proc_task_data_facecomp	facesrv.h	/^class proc_task_data_facecomp : public proc_task_data {$/;"	c
+proc_task_data_feature_cmp	facesrv.h	/^        proc_task_data_feature_cmp(struct feature *f0, struct feature *f1) {$/;"	f	class:proc_task_data_feature_cmp
+proc_task_data_feature_cmp	facesrv.h	/^class proc_task_data_feature_cmp : public proc_task_data$/;"	c
+proc_task_data_feature_gen	facesrv.h	/^        proc_task_data_feature_gen() {$/;"	f	class:proc_task_data_feature_gen
+proc_task_data_feature_gen	facesrv.h	/^class proc_task_data_feature_gen : public proc_task_data {$/;"	c
+proc_task_post	tasks.cpp	/^int proc_task_post(void *data) {$/;"	f
+procs	tasks.cpp	/^static struct proc_info *procs = NULL;$/;"	v	typeref:struct:proc_info	file:
+read_data	storage.cpp	/^static int read_data(int fd, void **data, int16_t *len)$/;"	f	file:
+read_int16	storage.cpp	/^static inline int read_int16(int fd, int16_t *n)$/;"	f	file:
+read_string	storage.cpp	/^static inline int read_string(int fd, char **s)$/;"	f	file:
+remove_by_desc	storage.cpp	/^int feature_storage::remove_by_desc(const char *desc) {$/;"	f	class:feature_storage
+remove_by_file	storage.cpp	/^int feature_storage::remove_by_file(const char *file) {$/;"	f	class:feature_storage
+req	facesrv.h	/^        struct proc_request *req;$/;"	m	class:proc_task_data	typeref:struct:proc_task_data::proc_request
+req_cmd	facesrv.h	/^        int req_cmd;$/;"	m	class:proc_task_data
+request	client.h	/^        struct proc_request request;$/;"	m	class:face_client	typeref:struct:face_client::proc_request
+result	facesrv.h	/^        int result;$/;"	m	class:proc_task_data
+results_1vn	testsrv.cpp	/^float *results_1vn = NULL;$/;"	v
+results_1vn_size	testsrv.cpp	/^int results_1vn_size = 0;$/;"	v
+s	tasks.h	/^    feature_storage *s;$/;"	m	struct:proc_config
+s_client_state	testsrv.cpp	/^int s_client_state = CLIENT_SATE_IDLE;$/;"	v
+s_mutex	tasks.cpp	/^static pthread_mutex_t s_mutex;$/;"	v	file:
+s_sem_proc	tasks.cpp	/^static sem_t s_sem_proc;$/;"	v	file:
+s_time_begin	testc.cpp	/^static struct timeval s_time_begin;$/;"	v	typeref:struct:timeval	file:
+s_time_begin	testlisten.cpp	/^static struct timeval s_time_begin;$/;"	v	typeref:struct:timeval	file:
+s_time_begin	testsrv.cpp	/^static struct timeval s_time_begin;$/;"	v	typeref:struct:timeval	file:
+s_time_begin	testtasks.cpp	/^static struct timeval s_time_begin;$/;"	v	typeref:struct:timeval	file:
+save	storage.cpp	/^int feature_storage::save(const char *file)$/;"	f	class:feature_storage
+save	storage.h	/^        int save() { return save(file); }$/;"	f	class:feature_storage
+score	client.h	/^    float score;$/;"	m	struct:feature_compare_result
+score	client.h	/^    float score;$/;"	m	struct:feature_lookup_result
+score	facesrv.h	/^        float score;$/;"	m	class:proc_task_data_facecomp
+score	facesrv.h	/^        float score;$/;"	m	class:proc_task_data_feature_cmp
+send_request	testlisten.cpp	/^static int send_request(int fd)$/;"	f	file:
+serno	facesrv.h	/^        int serno;$/;"	m	class:proc_task_data
+setFiles	facesrv.h	/^        void setFiles(const char *file0, const char *file1) {$/;"	f	class:proc_task_data_facecomp
+set_file	facesrv.h	/^        void set_file(const char *infile) {$/;"	f	class:proc_task_data_feature_gen
+set_req_cmd	facesrv.h	/^        void set_req_cmd(int v) { req_cmd = v; }$/;"	f	class:proc_task_data
+signal_ignore	listen.cpp	/^static void signal_ignore()$/;"	f	file:
+size	storage.h	/^    int16_t size;$/;"	m	struct:feature
+spend_ms	testc.cpp	/^static double spend_ms()$/;"	f	file:
+spend_ms	testlisten.cpp	/^static double spend_ms()$/;"	f	file:
+spend_ms	testsrv.cpp	/^static double spend_ms()$/;"	f	file:
+state	client.h	/^        int state;$/;"	m	class:face_client
+state	tasks.cpp	/^    int state;$/;"	m	struct:proc_info	file:
+state_message_handle_1v1	testsrv.cpp	/^static int state_message_handle_1v1(struct message &msg)$/;"	f	file:
+state_message_handle_1vN	testsrv.cpp	/^static int state_message_handle_1vN(struct message &msg)$/;"	f	file:
+state_message_handle_NvN	testsrv.cpp	/^static int state_message_handle_NvN(struct message &msg)$/;"	f	file:
+state_message_handle_feature_dir	testsrv.cpp	/^static int state_message_handle_feature_dir(struct message &msg)$/;"	f	file:
+state_message_handle_idle	testsrv.cpp	/^static int state_message_handle_idle(struct message &msg)$/;"	f	file:
+test_compare_batch	testsrv.cpp	/^int test_compare_batch(int loops)$/;"	f
+test_feature_compare	testsrv.cpp	/^static int test_feature_compare(const char *f1, const char *f2, feature_storage &l1, feature_storage &l2, int &num)$/;"	f	file:
+test_feature_gen	testsrv.cpp	/^static int test_feature_gen(const char *path)$/;"	f	file:
+test_feature_lookup	testsrv.cpp	/^static int test_feature_lookup(const char *file, const char *idx)$/;"	f	file:
+thread	tasks.cpp	/^    pthread_t thread;$/;"	m	struct:proc_info	file:
+thread_process	tasks.cpp	/^static void * thread_process(void *arg) {$/;"	f	file:
+write_data	storage.cpp	/^static inline int write_data(int fd, void *d, int16_t l)$/;"	f	file:
+write_int16	storage.cpp	/^static inline int write_int16(int fd, int16_t n)$/;"	f	file:
+write_string	storage.cpp	/^static inline int write_string(int fd, const char *s)$/;"	f	file:
+~face_client	client.cpp	/^face_client::~face_client()$/;"	f	class:face_client
+~feature_storage	storage.cpp	/^feature_storage::~feature_storage() {$/;"	f	class:feature_storage
+~proc_task_data	facesrv.h	/^        virtual ~proc_task_data() { }$/;"	f	class:proc_task_data
+~proc_task_data_facecomp	facesrv.h	/^        virtual ~proc_task_data_facecomp() { }$/;"	f	class:proc_task_data_facecomp
+~proc_task_data_feature_cmp	facesrv.h	/^        virtual ~proc_task_data_feature_cmp() {$/;"	f	class:proc_task_data_feature_cmp
+~proc_task_data_feature_gen	facesrv.h	/^        virtual ~proc_task_data_feature_gen() {$/;"	f	class:proc_task_data_feature_gen

@@ -1,0 +1,28 @@
+1 服务程序
+  ./face/bin/start_listen.sh
+  其中:
+  ./listen -n8 -d/srv/www/mydb
+  -n<服务线程个数>
+  -d<基础人脸库目录>，
+  如果目录下没有特征值索引文件feature.idx，则首先会自动创建。
+
+2 www测试demo
+    www/index.php   // homepage
+    1v1.php         // 1比1
+    1vN.php         // 1 vs N
+    NvN.php         // N vs N
+
+3 服务器测试程序
+    testlisten --通过socket发送请求，测试服务器。目前为发送1v1测试请求。在start_listen.sh之后运行
+
+4 其它测试
+    以下为完整的测试程序，测试功能接口或者性能，不需要服务程序
+    testface        -- 原始的1比1测试程序,测试sdk
+    testc           -- 测试 client 接口(服务程序使用此接口)
+    teststorage     -- 测试 feature 保存/加载
+    testtasks       -- 测试多任务模型
+    testsrv         -- 异步多任务测试(此模型未使用)
+
+
+
+

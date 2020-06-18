@@ -1,0 +1,2 @@
+0x7ca1cc16	gps_rfkill_set_power	/home/hehj/workspace/drivers/sss/idr410_gps_rfkill	EXPORT_SYMBOL
+0x786ec646	get_gps_disable_status	/home/hehj/workspace/drivers/sss/idr410_gps_rfkill	EXPORT_SYMBOL
