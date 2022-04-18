@@ -66,10 +66,10 @@ class GrabScreen(object):
         print('done')
 
 if __name__ == '__main__':
-    # grab = GrabScreen('smtp.qq.com', '1875803522@qq.com', 'i123madeitABC')
-    grab = GrabScreen('smtp.163.com', 'haojunhe@163.com', 'imadeit123ABC')
+    # grab = GrabScreen('smtp.qq.com', 'xxxxxxxxxx@qq.com', 'xxxxxxxxxxx')
+    grab = GrabScreen('smtp.163.com', 'xxxxxxxxxxxxxxx@163.com', 'xxxxxxxxxxxxxxx')
     # 接收邮件，可设置为你的QQ邮箱或者其他邮箱, e.g. '1875803522@qq.com',  
-    # receivers = ['haojunhe@163.com', '1875803522@qq.com']
-    receivers = ['haojunhe@163.com']
+    # receivers = ['xxxxxxx@163.com', 'xxxxxxxxx@qq.com']
+    receivers = ['xxxxxxxxxxxxxxx@163.com']
     grab.grab(receivers)
 
