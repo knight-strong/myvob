@@ -15,6 +15,7 @@
 #include <linux/sched.h>
 #include <linux/spinlock.h>
 #include <linux/timer.h>
+#include <linux/wait.h>
 
 #define DRV_VERSION     "1.0"
 
@@ -27,6 +28,7 @@ MODULE_ALIAS("testdev");
 struct testdev {
     struct timer_list timer;
     wait_queue_head_t waitq;
+    struct wait_queue_entry wait;
     int read_ready;
 
     struct workqueue_struct *wq;
@@ -169,11 +171,32 @@ static void test_work_proc(struct work_struct *work)
 
 static void tasklet_func(unsigned long data)
 {
-    printk(KERN_INFO "%s() l %d\n", __func__, __LINE__);
+    // wake_lock_init(&tdev.wakelock, WAKE_LOCK_SUSPEND, "hehj_wakelock");
+    unsigned long j[10] = {0};
+    int i = 0;
+    j[i++] = jiffies;
     spin_lock(&tdev.lock);
-    printk(KERN_INFO "%s() l %d\n", __func__, __LINE__);
+    j[i++] = jiffies;
+    udelay(1);
+    j[i++] = jiffies;
+    udelay(1);
+    j[i++] = jiffies;
+    udelay(1);
+    j[i++] = jiffies;
+    udelay(1);
+    j[i++] = jiffies;
     spin_unlock(&tdev.lock);
+    j[i++] = jiffies;
+    udelay(10*1000);
+    j[i++] = jiffies;
+    udelay(100*100);
+    j[i++] = jiffies;
+
+    for (i=i-1; i>=0; i--) {
+        printk("j[%d] = %lu\n", i, j[i]);
+    }
 }
+
 
 static __s32 __init testdev_module_init(void)
 {
@@ -198,6 +221,8 @@ static __s32 __init testdev_module_init(void)
 
     // waitqueue
     init_waitqueue_head(&tdev.waitq);
+
+    init_waitqueue_entry(&tdev.wait, current);
 
     // timer
     create_timer();

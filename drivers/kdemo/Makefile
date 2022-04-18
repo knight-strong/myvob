@@ -11,7 +11,7 @@ tdev-objs := testdev.o
 
 ifneq ($(KERNELRELEASE),)
 else
-    KERNELDIR ?= /usr/src/linux-headers-5.3.0-53-generic
+    KERNELDIR ?= /usr/src/linux-headers-`uname -r`
     PWD := $(shell pwd)
     modules := $(patsubst %.o, %.ko, $(obj-m))
 
